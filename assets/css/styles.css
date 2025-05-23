@@ -2,31 +2,31 @@
     box-sizing: border-box;
 }
 
-.outerBlock {
-    border: 5px solid blue;
-    height: 500px;
-}
-
-.innerBlock {
-    border: 5px solid red;
+header {
+    background-color: aquamarine;
+    min-height: 100vh;
     padding: 20px;
-    font-size: 2rem;
-}
+    text-align: center;
 
-.flexParent {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start; /*main-axis*/
-    align-items: flex-start;     /*cross-axis*/
-    gap: 20px;
-    /* flex-wrap: wrap-reverse; */
-    /* flex-flow: row wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.flexChild {
-    
+a {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid red;
+    padding: 10px 20px;
 }
 
-.child4 {
-    /* margin-left: auto; */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1em;
 }
