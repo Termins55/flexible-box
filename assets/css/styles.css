@@ -2,31 +2,42 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: aquamarine;
-    min-height: 100vh;
-    padding: 20px;
-    text-align: center;
+header, div, footer {
+    border: 2px solid red;
+}
 
+body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    border: 1px solid red;
-    padding: 10px 20px;
+nav, main {
+    border: 2px solid blue;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 1em;
+header, footer {
+    width: 100%;
 }
 
-p {
-    font-size: 1rem;
-    margin-bottom: 1em;
+nav {
+    width: 25%;
+}
+
+main {
+    width: 75%;
+}
+
+div {
+    max-width: 1000px;
+    width: 100%;
+    min-width: 320px;
+
+    display: flex;
+}
+
+footer {
+    margin-top: auto;
 }
