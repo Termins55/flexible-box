@@ -1,43 +1,53 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-header, div, footer {
-    border: 2px solid red;
+.parent {
+  border: 5px solid blue;
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  /*justify-content: space-between;*/ /*margin: ;*/
+  /* align-items: flex-start; */
+  align-items: center;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    
+.child {
+  border: 5px solid red;
+  /* flex */
+  /* order: ; */
+  /* align-self: ; */
 }
 
-nav, main {
-    border: 2px solid blue;
+/* .child1 {
+    align-self: center;
+} */
+/* поставити 4 елемент знизу */
+/* .child4 {
+    align-self: flex-end;
+} */
+.child1 {
+  /* align-self: flex-end; */
+  order: 6;
 }
 
-header, footer {
-    width: 100%;
+.child2 {
+  order: 5;
 }
 
-nav {
-    width: 25%;
+.child3 {
+  order: 4;
 }
 
-main {
-    width: 75%;
+.child4 {
+  order: 3;
 }
 
-div {
-    max-width: 1000px;
-    width: 100%;
-    min-width: 320px;
-
-    display: flex;
+.child5 {
+  order: 2;
 }
 
-footer {
-    margin-top: auto;
+.child6 {
+  order: 1;
 }
