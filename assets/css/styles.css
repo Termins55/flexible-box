@@ -6,48 +6,29 @@
   border: 5px solid blue;
   /* flex */
   display: flex;
-  flex-direction: column;
   min-height: 150px;
   /*justify-content: space-between;*/ /*margin: ;*/
   /* align-items: flex-start; */
-  align-items: center;
-}
+  gap: 10px; /* відстань між дочірніми елементами */
+  flex-wrap: wrap;
 
 .child {
   border: 5px solid red;
   /* flex */
   /* order: ; */
   /* align-self: ; */
+  /* width: 200px; */
+  flex-grow: 1; /* дозвіл збільшуватись */
+  flex-shrink: 0; /* дозвіл зменшуватись зменшувати */
+  flex-basis: 300px; /* початковий розмір */
+  /* flex: 0 1 auto; скорочений запис для flex-grow, flex-shrink, flex-basis */
 }
 
-/* .child1 {
-    align-self: center;
-} */
-/* поставити 4 елемент знизу */
-/* .child4 {
-    align-self: flex-end;
-} */
-.child1 {
-  /* align-self: flex-end; */
-  order: 6;
-}
+/* лінійний розмір вздовж головної вісі */
+/* content < width/height < flex-basis*/
 
-.child2 {
-  order: 5;
-}
+.anothe-el {
+    width: 200px;
+    border: 5px solid red;
 
-.child3 {
-  order: 4;
-}
-
-.child4 {
-  order: 3;
-}
-
-.child5 {
-  order: 2;
-}
-
-.child6 {
-  order: 1;
 }
