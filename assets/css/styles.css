@@ -2,33 +2,53 @@
   box-sizing: border-box;
 }
 
-.parent {
-  border: 5px solid blue;
-  /* flex */
-  display: flex;
-  min-height: 150px;
-  /*justify-content: space-between;*/ /*margin: ;*/
-  /* align-items: flex-start; */
-  gap: 10px; /* відстань між дочірніми елементами */
-  flex-wrap: wrap;
-
-.child {
-  border: 5px solid red;
-  /* flex */
-  /* order: ; */
-  /* align-self: ; */
-  /* width: 200px; */
-  flex-grow: 1; /* дозвіл збільшуватись */
-  flex-shrink: 0; /* дозвіл зменшуватись зменшувати */
-  flex-basis: 300px; /* початковий розмір */
-  /* flex: 0 1 auto; скорочений запис для flex-grow, flex-shrink, flex-basis */
+html {
+  --user-photo-size: 75px;
 }
 
-/* лінійний розмір вздовж головної вісі */
-/* content < width/height < flex-basis*/
+.userList {
+  padding: 15px;
+}
 
-.anothe-el {
-    width: 200px;
-    border: 5px solid red;
+.userListItem {
+  box-shadow: 0 0 5px grey;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
 
+.userImageWrapper {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px dotted purple;
+  flex-shrink: 0;
+}
+
+.userImageWrapper img {
+  width: var(--user-photo-size);
+  height: var(--user-photo-size);
+  object-fit: cover;
+}
+
+.userName {
+
+}
+
+.userDescription {
+
+}
+
+.trashBtn {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  color: gray;
+  font-size: 32px;
+}
+
+.trashBtn:hover {
+  cursor: pointer;
 }
